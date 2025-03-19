@@ -30,6 +30,7 @@ class BasicsDemo{
         System.out.println("Arithmetic");
         print();
 
+        primitives();
         //5. Arithmetic Operations 
         int i = 65;
         int j= 15;
@@ -52,6 +53,19 @@ class BasicsDemo{
     System.out.print("world!!");
     //System.out.println("world!!");
   }
+  static void primitives() {
+	      System.out.println("\n\nInside primitives ...");
+		  int intHex = 0x0041; // 16 power 0 * 1 + 16 power 1 * 4
+      //long intHex = 0x0041L; //this will also work
+		  System.out.println("intHex: " + intHex);
+		  
+		  // Java 7
+		  int intBinary = 0b0100_0001;
+		  System.out.println("intBinary: " + intBinary);
+		  
+		  int intOctal = 0101;
+		  System.out.println("intOctal: " + intOctal);
+	  }
 
 
   // comments or disable codes 
