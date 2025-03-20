@@ -15,9 +15,21 @@ class Student{
 
     // Integer literal:: int literal, long literal
 
+    char degree = 'B';
+    //char degree1 = B; // error: cannot find symbol B
+    
+    //char degree2 = '';  //  error: empty character literal
+    char degree2 = ' ';   //works fine
+    char degree3 = '\u0042';
+    //char degree4 = '\U0042';   //compile error
+    char degree4;
 
     int minValue = Integer.MIN_VALUE;
     int maxValue = Integer.MAX_VALUE;
+
+    float gpa = 3.79f;
+    //float gpa1 = 4.0;   // error: incompatible types: possible lossy conversion from double to float
+    double gpa1 = 4.0;
 
     void compute(){
         //int id;                 // local variables do not get any default values
@@ -30,6 +42,13 @@ class Student{
         System.out.println("phone1: "+phone1);
         System.out.println("minValue: "+minValue);
         System.out.println("maxValue: "+maxValue);
+
+        System.out.println("gpa: "+gpa);
+        System.out.println("gpa1: "+gpa1);
+        System.out.println("degree: "+degree);
+        System.out.println("degree2: "+degree2);
+        System.out.println("degree3: "+degree3);
+        System.out.println("degree4: "+degree4);
     }
 
     public static void main(String[] args){
